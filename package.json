@@ -1,5 +1,5 @@
 {
-  "name": "@lokalise/your-project-name",
+  "name": "@lokalise/frontend-analytics",
   "version": "1.0.0",
   "scripts": {
     "build": "vite build",
@@ -15,12 +15,12 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/your-project-name.umd.cjs",
-  "module": "./dist/your-project-name.js",
+  "main": "./dist/frontend-analytics.umd.cjs",
+  "module": "./dist/frontend-analytics.js",
   "exports": {
     ".": {
-      "import": "./dist/your-project-name.js",
-      "require": "./dist/your-project-name.umd.cjs"
+      "import": "./dist/frontend-analytics.js",
+      "require": "./dist/frontend-analytics.umd.cjs"
     }
   },
   "publishConfig": {
@@ -37,6 +37,7 @@
     "@semantic-release/github": "9.0.3",
     "@semantic-release/npm": "10.0.4",
     "@semantic-release/release-notes-generator": "11.0.4",
+    "@vitest/coverage-v8": "0.32.4",
     "eslint-config-prettier": "8.8.0",
     "eslint-plugin-prettier": "4.2.1",
     "husky": "8.0.3",
@@ -46,5 +47,8 @@
     "vite": "4.3.9",
     "vite-plugin-dts": "3.0.3",
     "vitest": "0.32.4"
+  },
+  "dependencies": {
+    "@amplitude/analytics-browser": "2.1.2"
   }
 }
